@@ -1,0 +1,17 @@
+{
+  "name": "express-example",
+  "description": "an example of express",
+  "main": "app.js",
+  "author": "Kevin OBrien",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
