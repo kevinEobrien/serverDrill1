@@ -31,7 +31,7 @@ const cohorts = {
   "Chort Code": "g110",
   students: 29
 }
-];}
+]};
 
 
 function findById(data, id) {
