@@ -5,7 +5,9 @@ const app = express();
 app.use(cors());
 
 const port = process.env.PORT || 3000;
-const cohorts = [{
+const cohorts = {
+  data:[
+{
   id: 1,
   "Cohort Name": "17-01-WD-DP",
   "Chort Code": "g100",
@@ -29,7 +31,7 @@ const cohorts = [{
   "Chort Code": "g110",
   students: 29
 }
-];
+];}
 
 
 function findById(data, id) {
