@@ -7,31 +7,31 @@ app.use(cors());
 const port = process.env.PORT || 3000;
 const cohorts = {
   data:[
-{
-  id: 1,
-  "Cohort Name": "17-01-WD-DP",
-  "Chort Code": "g100",
-  students: 28
-},
-{
-  id: 2,
-  "Cohort Name": "17-01-DS-GT",
-  "Chort Code": "g105",
-  students: 24
-},
-{
-  id: 3,
-  "Cohort Name": "17-02-WD-PX",
-  "Chort Code": "g109",
-  students: 30
-},
-{
-  id: 4,
-  "Cohort Name": "17-03-WD-BD",
-  "Chort Code": "g110",
-  students: 29
-}
-]};
+    {
+      id: 1,
+      "Cohort Name": "17-01-WD-DP",
+      "Chort Code": "g100",
+      students: 28
+    },
+    {
+      id: 2,
+      "Cohort Name": "17-01-DS-GT",
+      "Chort Code": "g105",
+      students: 24
+    },
+    {
+      id: 3,
+      "Cohort Name": "17-02-WD-PX",
+      "Chort Code": "g109",
+      students: 30
+    },
+    {
+      id: 4,
+      "Cohort Name": "17-03-WD-BD",
+      "Chort Code": "g110",
+      students: 29
+    }
+  ]};
 
 
 function findById(data, id) {
@@ -47,7 +47,7 @@ app.get("/", function(request, response) {
   response.json(cohorts);
 });
 
-app.get("/:id", function(request, response) {
+app.get("/:data:id", function(request, response) {
   var record = findById(cohorts, request.params.id);
   if (!record) {
     response.status(404);
