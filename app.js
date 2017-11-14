@@ -47,8 +47,8 @@ app.get("/", function(request, response) {
   response.json(cohorts);
 });
 
-app.get("/:data:id", function(request, response) {
-  var record = findById(cohorts, request.params.id);
+app.get("/:id", function(request, response) {
+  var record = findById(cohorts.data, request.params.id);
   if (!record) {
     response.status(404);
     response.json({
